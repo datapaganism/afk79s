@@ -19,7 +19,7 @@
 //#define MATRIX_ROW_PINS { B12, B13, B14, B15, A8, A10 }
 //#define MATRIX_COL_PINS { A15, B3, B4, B5, B6, B7, B8, B9, B1, B0, A7, A6, A5, A4, A3 }
 
-#define MATRIX_ROW_PINS { A10, A8, B15, B14, B13, B12 }
+#define MATRIX_ROW_PINS { B12, B13, B14, B15, A8, A10 }
 #define MATRIX_COL_PINS { A3, A4, A5, A6, A7, B0, B1, B9, B8, B7, B6, B5, B4, B3, A15 }
 #define UNUSED_PINS
 
