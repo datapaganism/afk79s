@@ -1,6 +1,6 @@
 Firmware for my keyboard layout,
 
-Built for STM32F401 Black Pill from aliexpress.
+But this time it's split and uses two pro micros
 
 Features include:
 
