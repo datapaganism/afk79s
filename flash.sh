@@ -1,1 +1,1 @@
-make -C ../../ afk79:default:dfu-util
+make -C ../../ afk79s:default:avrdude

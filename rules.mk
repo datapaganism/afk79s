@@ -1,6 +1,11 @@
 # MCU name
-MCU = STM32F401
-bootloader = stm32-dfu 
+
+#MCU = STM32F401
+#bootloader = stm32-dfu 
+
+MCU = atmega32u4
+bootloader = caterina 
+
 
 # Processor frequency.
 #     This will define a symbol, F_CPU, in all source code files equal to the
@@ -55,3 +60,5 @@ NKRO_ENABLE ?= yes		# USB Nkey Rollover - if this doesn't work, see here: https:
 BACKLIGHT_ENABLE ?= no  # Enable keyboard backlight functionality
 AUDIO_ENABLE ?= no
 RGBLIGHT_ENABLE ?= no
+
+SPLIT_KEYBOARD = yes

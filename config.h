@@ -5,10 +5,10 @@
 
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0xFEED
-#define PRODUCT_ID      0x6060
+#define PRODUCT_ID      0x6061
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    datapaganism
-#define PRODUCT         afk79
+#define PRODUCT         afk79s
 #define DESCRIPTION     Keyboard
 
 /* key matrix size */
@@ -16,12 +16,7 @@
 #define MATRIX_COLS 15
 
 /* key matrix pins */
-//#define MATRIX_ROW_PINS { B12, B13, B14, B15, A8, A10 }
-//#define MATRIX_COL_PINS { A15, B3, B4, B5, B6, B7, B8, B9, B1, B0, A7, A6, A5, A4, A3 }
-
-#define MATRIX_ROW_PINS { B12, B13, B14, B15, A8, A10 }
-#define MATRIX_COL_PINS { A3, A4, A5, A6, A7, B0, B1, B9, B8, B7, B6, B5, B4, B3, A15 }
-#define UNUSED_PINS
+//#define UNUSED_PINS
 
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
@@ -48,6 +43,24 @@
 
 /* prevent stuck modifiers */
 #define PREVENT_STUCK_MODIFIERS
+
+
+/* SPLIT STUFF */
+#define EE_HANDS
+#define SOFT_SERIAL_PIN D3
+#define SPLIT_LAYER_STATE_ENABLE
+#define SPLIT_MODS_ENABLE
+
+// from row/col 0 to X
+#define MATRIX_ROW_PINS       { D4, C6, D7, E6, B5, F4 }
+#define MATRIX_ROW_PINS_RIGHT { D0, D4, C6 , D7, E6, B4}
+
+#define MATRIX_COL_PINS       { F5, F6, F7, B1, B3, B2, B6 }
+#define MATRIX_COL_PINS_RIGHT { B5, F4, F5, F6, F7, B1, B3, B2, B6 }
+
+//Experemental
+#define SPLIT_HAND_PIN D0
+#define SPLIT_HAND_PIN_LOW_IS_LEFT
 
 
 #ifdef RGB_DI_PIN
