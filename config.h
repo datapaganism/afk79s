@@ -13,7 +13,7 @@
 
 /* key matrix size */
 #define MATRIX_ROWS 12
-#define MATRIX_COLS 8
+#define MATRIX_COLS 9
 
 /* key matrix pins */
 //#define UNUSED_PINS
