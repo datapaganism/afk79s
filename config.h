@@ -5,11 +5,11 @@
 
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0xFEED
-#define PRODUCT_ID      0x6061
+#define PRODUCT_ID      0xBEEF
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    datapaganism
 #define PRODUCT         afk79s
-#define DESCRIPTION     Keyboard
+#define DESCRIPTION     Split afk79
 
 /* key matrix size */
 #define MATRIX_ROWS 12
@@ -56,9 +56,8 @@
 
 #define MATRIX_COL_PINS       { B6, B2, B3, B1, F7, F6, F5 }
 #define MATRIX_COL_PINS_RIGHT { B5, F4, F5, F6, F7, B1, B3, B2, B6 }
-
-//Experemental
 #define SPLIT_HAND_PIN D2
+#define MASTER_RIGHT
 
 
 #ifdef RGB_DI_PIN
