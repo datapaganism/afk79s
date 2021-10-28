@@ -4,7 +4,7 @@
 #bootloader = stm32-dfu 
 
 MCU = atmega32u4
-bootloader = caterina 
+BOOTLOADER = caterina
 
 
 # Processor frequency.
