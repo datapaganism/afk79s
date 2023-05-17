@@ -1,28 +1,12 @@
-#ifndef CONFIG_H
-#define CONFIG_H
+// Copyright 2023 Alen Karnil (@datapaganism)
+// SPDX-License-Identifier: GPL-2.0-or-later
 
-#include "config_common.h"
-
-/* USB Device descriptor parameter */
-#define VENDOR_ID       0xFEED
-#define PRODUCT_ID      0xBEEF
-#define DEVICE_VER      0x0001
-#define MANUFACTURER    datapaganism
-#define PRODUCT         afk79s
-#define DESCRIPTION     Split afk79
+#pragma once
 
 
-/* COL2ROW or ROW2COL */
-#define DIODE_DIRECTION COL2ROW
-
-/* number of backlight levels */
-
-#ifdef BACKLIGHT_PIN
-#define BACKLIGHT_LEVELS 0
-#endif
 
 /* Set 0 if debouncing isn't needed */
-#define DEBOUNCING_DELAY 5
+#define DEBOUNCE 5
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
 #define LOCKING_SUPPORT_ENABLE
@@ -35,8 +19,6 @@
     keyboard_report->mods == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT)) \
 )
 
-/* prevent stuck modifiers */
-#define PREVENT_STUCK_MODIFIERS
 
 
 /* SPLIT STUFF */
@@ -51,17 +33,4 @@
 #define MATRIX_COL_PINS       { B6, B2, B3, B1, F7, F6, F5, NO_PIN, NO_PIN }
 #define MATRIX_COL_PINS_RIGHT { B6, B2, B3, B1, F7, F6, F5, F4, B5 }
 
-#define SOFT_SERIAL_PIN D3
 #define SPLIT_HAND_PIN D2
-#define SPLIT_USB_DETECT
-
-
-#ifdef RGB_DI_PIN
-#define RGBLIGHT_ANIMATIONS
-#define RGBLED_NUM 0
-#define RGBLIGHT_HUE_STEP 8
-#define RGBLIGHT_SAT_STEP 8
-#define RGBLIGHT_VAL_STEP 8
-#endif
-
-#endif
